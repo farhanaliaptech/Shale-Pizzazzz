@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Menu</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <!-- FontAwesome (for hamburger icon) -->
+        <script src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="nav.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <style>
+html, body {
+    overflow-x: hidden;
+}
+        footer .footer_container .footer_logo img{
+           height: 150px;
+        }
+
+      .hero-section{
+        height: 200px;
+        background-color: saddlebrown;
+      }
+
+      .card{
+        margin: 10px;
+      }
+      .card img{
+        height: 150px;
+      }
+
+      .pizza-sec , .garlic-bread-sec , .pizza-sandwich-sec , .dessert-sec , .beverage-sec , .menu_download{
+        /* padding: 20px; */
+      }
+
+      .menu-download img{
+        height: 200px;
+        width: 300px;
+      }
+
+      .row h3{
+        text-align: center;
+      }
+      /* Navbar Styling */
+.navbar {
+    background-color: #f8f9fa; /* Light background color for the navbar */
+    box-shadow: none; /* No shadow for a clean look */
+}
+
+/* Remove space between navbar and hero section */
+.hero-section {
+    margin-top: 0; /* Remove any margin between the navbar and hero section */
+    padding-top: 50px; /* Optional: adjust padding if needed to give space from the top */
+    text-align: center; /* Center the content */
+    background-color: #f5f5f5; /* Light background for the hero section */
+    padding: 60px 20px; /* Adjust padding for better layout */
+}
+
+
+/* Hero Section Text Styling */
+.hero-section h3 {
+    font-size: 36px; /* Bigger title for the hero section */
+    font-weight: bold;
+    color: #333; /* Dark text for readability */
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #666; /* Lighter text color */
+    font-style: italic;
+}
+
+    </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <!-- Logo Section -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo"
+                        style="height: 40px;" />
+                </a>
+
+                <!-- Hamburger Icon for Mobile View -->
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item"
+                                        href="#pizza">Pizza</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#bread">Garlic Breads</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#sandwiches">Pizza
+                                        Sandwiches</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#desserts">Desserts</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#beverages">Beverages</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#menu_download">Menu
+                                        Download</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownLocations" role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Locations</a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdownLocations">
+                                <li><a class="dropdown-item"
+                                        href="location.html">Store
+                                        Location</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact
+                                Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownFeedback" role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Feedback</a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdownFeedback">
+                                <li><a class="dropdown-item"
+                                        href="franchise.html">Franchise
+                                        Info</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <h3>Menu</h3>
+            <p>Best Provide the Best Taste!</p>
+        </div>
+
+        <section>
+            <hr>
+            <div class="row pizza-sec d-flex justify-content-around" id="pizza">
+                <h3>Pizza's</h3>
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza1.jpg" class="card-img-top"
+                        alt="Pizza 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Large Pizza</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$10.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza2.jpg" class="card-img-top"
+                        alt="Pizza 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Regular Pizza</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$12.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza3.jpg" class="card-img-top"
+                        alt="Pizza 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Small Pizza</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$14.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Garlic Bread Section -->
+            <div class="row garlic-bread-sec d-flex justify-content-around"
+                id="bread">
+                <h3>Garlic Bread</h3>
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/garlic1.webp" class="card-img-top"
+                        alt="Garlic Bread 1">
+                    <div class="card-body">
+                        <h5 class="card-title">2 Garlic Bread</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$4.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/garlic2.jpg" class="card-img-top"
+                        alt="Garlic Bread 2">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Pieces Of Bread</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$5.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/garlic3.jpg" class="card-img-top"
+                        alt="Garlic Bread 3">
+                    <div class="card-body">
+                        <h5 class="card-title">6 Pieces of Bread</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$6.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Pizza Sandwiches Section -->
+            <div class="row pizza-sandwich-sec d-flex justify-content-around"
+                id="sandwiches">
+                <h3>Pizza Sandwiches</h3>
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza-sandwiches1.jpg" class="card-img-top"
+                        alt="Pizza Sandwich 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Turkish Sandwich</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$8.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza-sandwiches2.avif"
+                        class="card-img-top" alt="Pizza Sandwich 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Italian Sandwich</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$9.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/pizza-sandwiches3.jpg" class="card-img-top"
+                        alt="Pizza Sandwich 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Saucy Sandwich</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$11.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Dessert Section -->
+            <div class="row dessert-sec d-flex justify-content-around"
+                id="desserts">
+                <h3>Desserts</h3>
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/ice-cream1.jpg" class="card-img-top"
+                        alt="Ice Cream">
+                    <div class="card-body">
+                        <h5 class="card-title">Ice Cream</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$3.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/cake2.jpg" class="card-img-top" alt="Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Cup Cake</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$4.50</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/cake3.jpg" class="card-img-top"
+                        alt="Cake 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Cake</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$5.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Beverages Section -->
+            <div class="row beverage-sec d-flex justify-content-around"
+                id="beverages">
+                <h3>Beverages</h3>
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/beverage1.jpg" class="card-img-top"
+                        alt="Beverage 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Coca Cola</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$2.50</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/beverage2.webp" class="card-img-top"
+                        alt="Beverage 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pepsi</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$3.00</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/beverage3.jpg" class="card-img-top"
+                        alt="Beverage 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Juice Drink</h5>
+                        <p class="card-text">Order Now!</p>
+                        <p class="price-tag">$1.99</p> <!-- Price Tag -->
+                        <button class="btn btn-success add-to-cart">Add to
+                            Cart</button> <!-- Add to Cart Button -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Menu Download -->
+            <div class="row menu-download d-flex justify-content-around "
+                id="menu_download">
+                <h3>Menu Download</h3>
+                <img src="images/menuu.jpg" alt="Menu Image">
+            </div>
+            <hr>
+        </section>
+
+        <footer>
+            <div class="footer_container container">
+                <div class="footer_logo">
+                    <img src="images/logo.png" alt="logo" />
+                </div>
+                <div class="link_lists">
+                    <h3>Main Links</h3>
+                    <ul>
+                        <li>Order Tracking</li>
+                        <li>New Order</li>
+                        <li>Contact Us</li>
+                        <li>News & Blogs</li>
+                    </ul>
+                </div>
+                <div class="link_lists">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditons</li>
+                    </ul>
+                </div>
+                <div class="news_letter">
+                    <h3>Support</h3>
+                    <input type="email" placeholder="Enter your Email..." />
+                    <h3>Follow Us</h3>
+                    <div class="icon_container">
+                        <div class="icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

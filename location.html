@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Location</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <!-- FontAwesome (for hamburger icon) -->
+        <script src="https://kit.fontawesome.com/7a4b62b0a4.js"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="nav.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <style>
+body{
+overflow-x: hidden ;
+}
+    footer .footer_container .footer_logo img{
+       height: 150px;
+    }
+
+ 
+  /* Navbar Styling */
+.navbar {
+background-color: #f8f9fa; /* Light background color for the navbar */
+box-shadow: none; /* No shadow for a clean look */
+}
+
+/* Remove space between navbar and hero section */
+.hero-section {
+margin-top: 0; /* Remove any margin between the navbar and hero section */
+padding-top: 50px; /* Optional: adjust padding if needed to give space from the top */
+text-align: center; /* Center the content */
+background-color: #f5f5f5; /* Light background for the hero section */
+padding: 60px 20px; /* Adjust padding for better layout */
+}
+
+/* Hero Section Text Styling */
+.hero-section h3 {
+font-size: 36px; /* Bigger title for the hero section */
+font-weight: bold;
+color: #333; /* Dark text for readability */
+margin-bottom: 15px;
+}
+
+.hero-section p {
+font-size: 18px;
+color: #666; /* Lighter text color */
+font-style: italic;
+}
+
+</style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <!-- Logo Section -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="logo"
+                        style="height: 40px;" />
+                </a>
+
+                <!-- Hamburger Icon for Mobile View -->
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item"
+                                        href="menu.html">Pizza</a></li>
+                                <li><a class="dropdown-item"
+                                        href="menu.html">Garlic Breads</a></li>
+                                <li><a class="dropdown-item"
+                                        href="menu.html">Pizza
+                                        Sandwiches</a></li>
+                                <li><a class="dropdown-item"
+                                        href="menu.html">Desserts</a></li>
+                                <li><a class="dropdown-item"
+                                        href="menu.html">Beverages</a></li>
+                                <li><a class="dropdown-item" href="#">Menu
+                                        Download</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownLocations" role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Locations</a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdownLocations">
+                                <li><a class="dropdown-item"
+                                        href="location.html">Store
+                                        Location</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownFeedback" role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">Feedback</a>
+                            <ul class="dropdown-menu"
+                                aria-labelledby="navbarDropdownFeedback">
+                                <li><a class="dropdown-item" href="franchise.html">Franchise
+                                        Info</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <h3>Location</h3>
+            <p>Get Our Location!</p>
+        </div>
+        <section class="d-flex justify-content-around p-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.7978330696633!2d67.04237307488226!3d24.938956142113106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3daae54d55%3A0x5dae2a3a4b71f12a!2sAptech%20Learning%20North%20Nazimabad%20II%20Center!5e0!3m2!1sen!2s!4v1742137638535!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer>
+            <div class="footer_container container">
+                <div class="footer_logo">
+                    <img src="images/logo.png" alt="logo" />
+                </div>
+                <div class="link_lists">
+                    <h3>Main Links</h3>
+                    <ul>
+                        <li>Order Tracking</li>
+                        <li>New Order</li>
+                        <li>Contact Us</li>
+                        <li>News & Blogs</li>
+                    </ul>
+                </div>
+                <div class="link_lists">
+                    <h3>Support</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditons</li>
+                    </ul>
+                </div>
+                <div class="news_letter">
+                    <h3>Support</h3>
+                    <input type="email" placeholder="Enter your Email..." />
+                    <h3>Follow Us</h3>
+                    <div class="icon_container">
+                        <div class="icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>

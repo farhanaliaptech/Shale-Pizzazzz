@@ -1,0 +1,22 @@
+/* Optional custom CSS */
+.navbar-brand img {
+    height: 40px; /* Adjust logo size */
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* Spacing between nav items */
+  }
+  
+  .nav-link {
+    font-weight: 500;
+  }
+  
+  /* If you want to change background or text color */
+  .navbar-light {
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .nav-link:hover {
+    color: #149f39; /* Example hover color */
+  }
+  
